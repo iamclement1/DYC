@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+import Navbar from './components/Navbar'
+import About from './pages/About'
 
 function App() {
 
   return (
-    <div className="App">
-      <h1 className="text-4xl font-bold">
-        Welcome to DYC 2022
-      </h1>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={ <About /> } />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
