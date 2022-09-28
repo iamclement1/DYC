@@ -3,12 +3,11 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <h1 className="text-4xl font-bold">
-        Welcome to DYC  2022
+        Welcome to DYC 2022
       </h1>
     </div>
   )
