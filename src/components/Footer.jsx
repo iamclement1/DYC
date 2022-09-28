@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div>Footer</div>
+        <div className="md:flex items-center justify-content">
+            <div></div>
+            <div></div>
+        </div>
     )
 }

@@ -16,8 +16,8 @@ export default function Navbar() {
                         </span>
                     </Link>
                 </div>
-                <div className="md:flex md:items-center md:space-x-12">
-                    <ul className="md:flex md:px-5 md:space-x-8 uppercase text-sm">
+                <div className="md:flex md:items-center md:space-x-12 md:space-y-0 space-y-6">
+                    <ul className="md:flex md:px-5 md:space-x-8 md:space-y-0 space-y-4 uppercase text-sm">
                         <li className="hover:text-[#5C407F] duration-500">
                             <Link to="/">
                                 About dyc 22
