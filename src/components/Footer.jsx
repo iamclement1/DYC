@@ -1,36 +1,36 @@
 import Logo from '../assets/dyc.svg'
 import { AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai'
 import { RiFacebookCircleLine } from 'react-icons/ri';
-import { GoLocation } from 'react-icons/go';
 import { IoMdMail } from 'react-icons/io';
-import { FiPhoneCall } from 'react-icons/fi';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { IoLocation } from 'react-icons/io5'
 
 export default function Footer() {
     return (
-        <div className="md:flex items-center justify-between bg-[#5C407F] text-white p-14 ">
+        <div className="md:flex items-center justify-between bg-[#5C407F] text-[#FDFDFD] md:p-14 p-3 ">
             <div>
                 <div>
-                    <div className="flex items-center space-x-3">
+                    <div className="md:flex items-center md:space-x-3">
                         <img src={Logo} alt="" className="w-[48px] " />
                         <div className="">
-                            <span className="block text-2xl font-bold mb-0">
+                            <span className="block md:text-2xl text-xl font-bold mb-0 ">
                                 Diocesan Youth Department
                             </span>
-                            <span className="pt-0 mt-0">
+                            <span className="pt-0 mt-0 text-sm">
                                 Ibadan Anglican Diocese
                             </span>
                         </div>
                     </div>
-                    <div className="mt-8 text-3xl flex space-x-6">
-                        <AiOutlineYoutube />
-                        < AiOutlineInstagram />
-                        <RiFacebookCircleLine />
+                    <div className="md:mt-8 mb-8 text-3xl flex space-x-6">
+                        <AiOutlineYoutube className="cursor-pointer" />
+                        < AiOutlineInstagram className="cursor-pointer"/>
+                        <RiFacebookCircleLine className="cursor-pointer" />
                     </div>
                 </div>
             </div>
-            <div className="w-2/6">
+            <div className="md:w-2/6">
                 <div className="flex items-center space-x-3 py-2">
-                    <GoLocation />
+                    <IoLocation />
                     <span>
                         No. 3, Arigidi Street, Old Bodija,
                         Ibadan, Oyo State.
@@ -43,7 +43,7 @@ export default function Footer() {
                     </span>
                 </div>
                 <div className="flex items-center space-x-3 py-2">
-                    <FiPhoneCall />
+                    <BsFillTelephoneFill />
                     <span>
                         +234 805 530 1983
                     </span>
