@@ -1,44 +1,56 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from './Button'
+import Logo from '../assets/dyc.svg'
+import { useState } from "react";
 import { FaBars } from 'react-icons/fa'
 
 
-export default function Navbar() {
-
-    const [showNav, setShowNav] = useState(false);
+export default function () {
+    const [open, setOpen] = useState(false)
     return (
         <div>
-            <nav className="md:px-16 px-5 py-6 shadow bg-white md:flex items-center justify-between">
-                <div>
-                    <Link to="/">
-                        <span className="text-2xl font-bold cursor-pointer">
-                            DYC
-                        </span>
-                    </Link>
-                </div>
-                <div className="md:flex md:items-center md:space-x-12 md:space-y-0 space-y-6">
-                    <ul className="md:flex md:px-5 md:space-x-8 md:space-y-0 space-y-4 uppercase text-sm">
-                        <li className="hover:text-[#5C407F] duration-500">
-                            <Link to="/">
-                                About dyc 22
+            <nav className="bg-white shadow">
+                <div className="flex items-center text-sm justify-between md:pr-28">
+                    <div className="z-50 p-5 md:w-auto w-full flex justify-between items-center">
+                        <img src={Logo} alt="brand__logo" />
+                        <div className="text-2xl md:hidden items-center" onClick={() => setOpen(!open)}>
+                            <FaBars name={`${open ? "close" : "menu"}`} />
+                        </div>
+                    </div>
+                    <ul className="md:flex hidden uppercase items-center gap-8 ">
+                        <li>
+                            <Link to="/" className="py-7 px-3 inline-block mr-2">
+                                Home
                             </Link>
-                        </li>
-                        <li className="hover:text-[#5C407F] duration-500">
-                            <Link to="/">
-                                Support us
+                            <Link to="/" className="py-7 px-3 inline-block mr-2">
+                                support us
                             </Link>
-                        </li>
-                        <li className="hover:text-[#5C407F] duration-500">
-                            <Link to="/">
+                            <Link to="/" className="py-7 px-3 inline-block mr-2">
                                 about dyd
                             </Link>
                         </li>
+                        <div className="md:block hidden">
+                            <Button />
+                        </div>
                     </ul>
-
-                    <button className="text-[#5C407F] uppercase text-sm border border-[#5C407F] rounded px-6
-                    py-2 hover:bg-[#5C407F] hover:text-white transition-all duration-500">
-                        Donate
-                    </button>
+                    <ul className={`
+                    md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+                    duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
+                        <li>
+                            <Link to="/" className="py-7 px-3 inline-block">
+                                Home
+                            </Link>
+                            <Link to="/" className="py-7 px-3 inline-block">
+                                Home
+                            </Link>
+                            <Link to="/" className="py-7 px-3 inline-block">
+                                Home
+                            </Link>
+                        </li>
+                        <div className="py-5">
+                            <Button />
+                        </div>
+                    </ul>
                 </div>
             </nav>
         </div>

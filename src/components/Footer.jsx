@@ -13,10 +13,10 @@ export default function Footer() {
                     <div className="md:flex items-center md:space-x-3">
                         <img src={Logo} alt="" className="w-[48px] " />
                         <div className="">
-                            <span className="block md:text-2xl text-xl font-bold mb-0 ">
+                            <span className="block md:text-2xl text-sm font-bold mb-0 ">
                                 Diocesan Youth Department
                             </span>
-                            <span className="pt-0 mt-0 text-sm">
+                            <span className="pt-0 mt-0 md:text-sm text-xs">
                                 Ibadan Anglican Diocese
                             </span>
                         </div>
