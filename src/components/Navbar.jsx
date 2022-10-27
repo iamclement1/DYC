@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from './Button'
-import Logo from '../assets/dyc.svg'
+import Logo from '../assets/Diocesan-Logo.svg'
 import { useState } from "react";
 import { FaBars } from 'react-icons/fa'
 
