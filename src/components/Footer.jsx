@@ -7,7 +7,7 @@ import { IoLocation } from 'react-icons/io5'
 
 export default function Footer() {
     return (
-        <div className="md:flex items-center justify-between bg-gradient-to-r from- text-[#FDFDFD] md:p-14 p-3 ">
+        <div className="md:flex items-center justify-between bg-gradient-to-r from-indigo-400 to-purple-800 text-[#FDFDFD] md:p-14 p-3 ">
             <div>
                 <div>
                     <div className="md:flex items-center md:space-x-3">
@@ -20,11 +20,6 @@ export default function Footer() {
                                 Ibadan Anglican Diocese
                             </span>
                         </div>
-                    </div>
-                    <div className="md:mt-8 mb-8 text-3xl flex space-x-6">
-                        <AiOutlineYoutube className="cursor-pointer" />
-                        < AiOutlineInstagram className="cursor-pointer"/>
-                        <RiFacebookCircleLine className="cursor-pointer" />
                     </div>
                 </div>
             </div>
@@ -47,6 +42,13 @@ export default function Footer() {
                     <span>
                         +234 805 530 1983
                     </span>
+                </div>
+            </div>
+            <div>
+                <div className="md:mt-8 mb-8 text-3xl flex space-x-6">
+                    <AiOutlineYoutube className="cursor-pointer" />
+                    < AiOutlineInstagram className="cursor-pointer" />
+                    <RiFacebookCircleLine className="cursor-pointer" />
                 </div>
             </div>
         </div>
