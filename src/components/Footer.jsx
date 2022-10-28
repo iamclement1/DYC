@@ -7,7 +7,7 @@ import { IoLocation } from 'react-icons/io5'
 
 export default function Footer() {
     return (
-        <div className="md:flex items-center justify-between bg-[#5C407F] text-[#FDFDFD] md:p-14 p-3 ">
+        <div className="md:flex items-center justify-between bg-gradient-to-r from- text-[#FDFDFD] md:p-14 p-3 ">
             <div>
                 <div>
                     <div className="md:flex items-center md:space-x-3">
