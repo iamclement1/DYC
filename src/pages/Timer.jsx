@@ -8,9 +8,12 @@ export default function Timer() {
     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
     return (
-        <div className="">
-            <h1>Countdown Timer</h1>
+        <div className="mt-5">
+
             <Countdown targetDate={dateTimeAfterThreeDays} />
+            <div className="flex justify-center">
+                <button className="bg-[#5C407F] p-3 rounded-sm text-white mt-4 mb-4 uppercase">register</button>
+            </div>
         </div>
     );
 }

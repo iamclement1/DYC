@@ -24,8 +24,8 @@
 
 .show-counter {
     padding: 0.5rem;
-    background: rgb(58, 53, 143);
-    background: linear-gradient(90deg, rgba(58, 53, 143, 1) 0%, rgba(55, 55, 167, 1) 38%, rgba(248, 0, 255, 1) 100%);
+    background: rgb(121, 53, 143);
+    background: linear-gradient(90deg, rgba(121, 53, 143, 1) 0%, rgba(118, 15, 235, 1) 44%, rgba(77, 25, 131, 1) 100%); 
     max-width: 100%;
     margin: auto;
 }
@@ -42,8 +42,7 @@
     /* border: 1px solid #ebebeb; */
     border-radius: 0.25rem;
     text-decoration: none;
-    color: #000;
-
+    color: #fff;
 }
 
 .show-counter .countdown {
@@ -69,4 +68,27 @@
     font-size: 0.75rem;
     line-height: 1rem;
 
+}
+
+@media (max-width: 768px) {
+    .show-counter .countdown-link {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.85rem;
+        line-height: 3rem;
+        padding: 0.5rem;
+        /* border: 1px solid #ebebeb; */
+        border-radius: 0.25rem;
+        text-decoration: none;
+        color: #fff;
+    }
+    .show-counter {
+        padding: 0.5rem;
+        background: rgb(121, 53, 143);
+        background: linear-gradient(90deg, rgba(121, 53, 143, 1) 0%, rgba(118, 15, 235, 1) 44%, rgba(77, 25, 131, 1) 100%); 
+        max-width: 50%;
+        margin: auto;
+    }
 }
