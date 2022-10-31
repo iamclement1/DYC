@@ -79,7 +79,7 @@ export default function CampActivity() {
                     <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
                         Theme:
                     </h3>
-                    <h2 className="text-[#5C407F] text-center text-5xl font-bold">
+                    <h2 className="text-[#5C407F] text-center md:text-5xl text-2xl font-bold">
                         A Peculiar Youth
                     </h2>
                 </div>
@@ -87,7 +87,7 @@ export default function CampActivity() {
                     <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
                         Date:
                     </h3>
-                    <h2 className="text-[#5C407F] text-center text-3xl font-bold">
+                    <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
                         December 18 - 21, 2022
                     </h2>
                 </div>
@@ -95,7 +95,7 @@ export default function CampActivity() {
                     <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
                         Venue:
                     </h3>
-                    <h2 className=" w-3/6 mx-auto text-[#5C407F] text-center text-3xl font-bold">
+                    <h2 className=" md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">
                         United Missionary Comprehensive College, Molete, Ibadan
                     </h2>
                 </div>
