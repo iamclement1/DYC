@@ -6,7 +6,7 @@ export const About = () => {
             <div className="mx-auto text-center">
                 <img src={Img} alt="About-Us-Image" className="mx-auto md:mt-20 mt-12 md:w-[75%] w-[85%]" />
                 <h1 class="md:mt-12 mt-4 text-[#5C407F] uppercase font-bold md:text-4xl text-xl mb-4">About Us</h1>
-                <div className=" px-40">
+                <div className=" md:px-40 px-10">
                     <p className="text-sm">
                         Diocesan Youth Convention (DYC) is an annual camp meeting organized by the Diocesan Youth Department of the Ibadan Anglican Diocese. It has provided unique spiritual learning opportunities since 2000 for Christian youths.
                     </p>
