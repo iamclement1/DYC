@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import { About } from './About'
 import CampActivity from './CampActivities'
+import Timer from './Timer'
 
 
 export default function Landing() {
@@ -10,6 +11,7 @@ export default function Landing() {
             <Hero />
             <About />
             <CampActivity />
+            <Timer />
         </div>
     )
 }
