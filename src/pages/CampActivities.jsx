@@ -95,7 +95,7 @@ export default function CampActivity() {
                     <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
                         Venue:
                     </h3>
-                    <h2 className=" md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">
+                    <h2 className=" mx-auto md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">
                         United Missionary Comprehensive College, Molete, Ibadan
                     </h2>
                 </div>
