@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="App font-Montserrat">
         <Navbar />
         <Routes>
           <Route path="/" element={ <Landing /> } />
