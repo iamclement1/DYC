@@ -1,4 +1,4 @@
-import Logo from '../assets/dyc.svg'
+import Logo from '../assets/Diocesan-Logo.svg'
 import { AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai'
 import { RiFacebookCircleLine } from 'react-icons/ri';
 import { IoMdMail } from 'react-icons/io';
@@ -7,7 +7,8 @@ import { IoLocation } from 'react-icons/io5'
 
 export default function Footer() {
     return (
-        <div className="md:flex items-center justify-between bg-gradient-to-r from-indigo-400 to-purple-800 text-[#FDFDFD] md:p-14 p-3 ">
+        <div className="md:flex items-center justify-between 
+        bg-gradient-to-r from-rose-900 via-fuchsia-900 to-purple-900 text-[#FDFDFD] md:p-14 p-12 ">
             <div>
                 <div>
                     <div className="md:flex items-center md:space-x-3">
@@ -45,7 +46,7 @@ export default function Footer() {
                 </div>
             </div>
             <div>
-                <div className="md:mt-8 mb-8 text-3xl flex space-x-6">
+                <div className="md:mt-8 mb-8 text-3xl md:space-y-6 md:block flex space-x-4 md:space-x-0">
                     <AiOutlineYoutube className="cursor-pointer" />
                     < AiOutlineInstagram className="cursor-pointer" />
                     <RiFacebookCircleLine className="cursor-pointer" />

@@ -12,7 +12,10 @@ export default function Timer() {
 
             <Countdown targetDate={dateTimeAfterThreeDays} />
             <div className="flex justify-center">
-                <button className="bg-[#5C407F] p-3 rounded-sm text-white mt-4 mb-4 uppercase">register</button>
+                <button className="bg-[#5C407F] p-3 rounded-sm text-white mt-16 mb-4 uppercase"
+                    onClick={() => window.location.href = "https://forms.gle/BeJidbUiXhbLpcDU9"}>
+                    register
+                </button>
             </div>
         </div>
     );

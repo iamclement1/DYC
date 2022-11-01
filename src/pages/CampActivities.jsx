@@ -11,12 +11,12 @@ import { Fade } from 'react-awesome-reveal';
 
 export default function CampActivity() {
     return (
-        <section>
+        <section className=" relative -z-10">
 
             <h3 className="mt-6 mb-6 uppercase text-gray-500 text-center text-xl font-semibold">
                 Camp Activities
             </h3>
-            <Fade direction="up" triggeronce cascade>
+            <Fade direction="up" cascade>
                 <div className="mx-auto md:w-3/4 md:flex px-6 py-4 md:px-0 md:py-0 justify-between overflow-hidden ">
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 ">
                         <img src={Fellowship} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
@@ -27,7 +27,7 @@ export default function CampActivity() {
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
                         <img src={Studying} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
                         <p className="uppercase text-sm w-3/6 mx-auto py-2 font-semibold text-gray-600">
-                            dialy bible classes
+                            daily bible classes
                         </p>
                     </div>
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 px-auto">
@@ -79,7 +79,7 @@ export default function CampActivity() {
                     <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
                         Theme:
                     </h3>
-                    <h2 className="text-[#5C407F] text-center md:text-5xl text-2xl font-bold">
+                    <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
                         A Peculiar Youth
                     </h2>
                 </div>

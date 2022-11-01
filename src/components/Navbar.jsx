@@ -12,7 +12,8 @@ export default function () {
             <nav className="bg-white shadow-md fixed w-full mb-5">
                 <div className="flex items-center text-sm justify-between md:pr-20">
                     <div className="z-50 p-3 md:w-auto w-full flex justify-between items-center">
-                        <img src={Logo} alt="brand__logo" className="ml-12 border border-radius border-purple-600 rounded-full"/>
+                        <img src={Logo} alt="brand__logo" className="md:ml-12 
+                        md:w-full w-1/5 border border-radius border-purple-600 rounded-full"/>
                         <div className="text-2xl md:hidden items-center" onClick={() => setOpen(!open)}>
                             <FaBars name={`${open ? "close" : "menu"}`} />
                         </div>
