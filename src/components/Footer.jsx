@@ -47,9 +47,12 @@ export default function Footer() {
             </div>
             <div>
                 <div className="md:mt-8 mb-8 text-3xl md:space-y-6 md:block flex space-x-4 md:space-x-0">
-                    <AiOutlineYoutube className="cursor-pointer" />
-                    < AiOutlineInstagram className="cursor-pointer" />
-                    <RiFacebookCircleLine className="cursor-pointer" />
+                    <AiOutlineYoutube className="cursor-pointer" 
+                    onClick={() => window.location.href="www.youtube.com"} />
+                    < AiOutlineInstagram className="cursor-pointer" 
+                    onClick={() => window.location.href="https://www.instagram.com/dydibadan/"} />
+                    <RiFacebookCircleLine className="cursor-pointer" 
+                    onClick={() => window.location.href="https://web.facebook.com/DYDIbadan/"} />
                 </div>
             </div>
         </div>
