@@ -12,6 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={ <Landing /> } />
+          
         </Routes>
         <Footer />
       </div>

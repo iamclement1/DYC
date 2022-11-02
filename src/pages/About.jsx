@@ -3,7 +3,7 @@ import Img from '../assets/dyc2.png'
 export const About = () => {
     return (
         <main>
-            <div className="mx-auto text-center mt-0 py-0" >
+            <div className="mx-auto text-center mt-0 py-0" id="about" >
                 <img src={Img} alt="About-Us-Image" className="mx-auto md:mt-20 mt-12 md:w-[75%] w-[85%]" />
                 <h1 className="md:mt-12 mt-4 text-[#5C407F] uppercase font-bold md:text-4xl text-xl mb-4">About Us</h1>
                 <div className=" mx-auto  w-5/6 md:w-3/6">

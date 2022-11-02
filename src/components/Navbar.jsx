@@ -20,7 +20,7 @@ export default function () {
                     </div>
                     <ul className="md:flex hidden uppercase items-center md:mr-6">
                         <li>
-                            <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            <Link to="#about" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 about dyc 22
                             </Link>
                             <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
