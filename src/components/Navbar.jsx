@@ -34,7 +34,7 @@ export default function () {
                             <Button />
                             <button className="bg-[#5C407F] px-5 py-2 rounded-sm text-white  uppercase
                             hover:bg-white hover:border hover:border-[#5C407F] hover:text-[#5C407F]
-                            transition ease-in-out duration-300 "
+                            transition ease-in-out duration-300 rounded "
                                 onClick={() => window.location.href = "https://forms.gle/BeJidbUiXhbLpcDU9"}>
                                 register
                             </button>
