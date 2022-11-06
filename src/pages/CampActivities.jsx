@@ -46,21 +46,21 @@ export default function CampActivity() {
 
                 <div className="mx-auto md:w-3/4 md:flex px-6 py-4 md:px-0 md:py-0 justify-between overflow-hidden md:mt-5 mt-2 ">
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 ">
-                        <img src={Fellowship} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
+                        <img src={Activities} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
                         <p className="uppercase text-sm w-2/5 mx-auto py-2 font-semibold text-gray-600">
-                            daily Fellowship
+                            platoon activities
                         </p>
                     </div>
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
-                        <img src={Studying} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
+                        <img src={Prayer} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
                         <p className="uppercase text-sm w-3/6 mx-auto py-2 font-semibold text-gray-600">
-                            dialy bible classes
+                            corporate devotions
                         </p>
                     </div>
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 px-auto">
-                        <img src={Sport} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-2/5 mx-auto py-2 font-semibold text-gray-600">
-                            sports
+                        <img src={Worship} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
+                        <p className="uppercase text-sm w-3/5 mx-auto py-2 font-semibold text-gray-600">
+                            worship & prayers
                         </p>
                     </div>
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
