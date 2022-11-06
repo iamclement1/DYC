@@ -2,7 +2,8 @@ export default function Sponsor() {
 
     return (
         <>
-            <h3 className="text-center text-[#5C407F] text-3xl font-bold mt-20 uppercase">Support us</h3>
+        <hr className="w-5/6 mx-auto mt-6 "/>
+            <h3 className="text-center text-[#5C407F] text-3xl font-bold mt-8 uppercase">Support us</h3>
             <div className="w-5/6 md:w-3/6 mx-auto ">
                 <p className="md:text-md text-sm text-center mt-4 leading-7">
                     To make the Diocesan Youth Convention (DYC) as affordable and accessible as possible

@@ -9,7 +9,7 @@ export default function () {
     const [open, setOpen] = useState(false)
     return (
         <div>
-            <nav className="bg-white shadow-md fixed w-full mb-5">
+            <nav className="bg-white shadow-md fixed w-full mb-5 ">
                 <div className="flex items-center text-sm justify-between md:pr-20">
                     <div className="z-50 p-3 md:w-auto w-full flex justify-between items-center">
                         <img src={Logo} alt="brand__logo" className="md:ml-12 
@@ -30,8 +30,14 @@ export default function () {
                                 about dyd
                             </Link>
                         </li>
-                        <div className="md:block hidden">
+                        <div className="md:flex md:space-x-7 hidden">
                             <Button />
+                            <button className="bg-[#5C407F] px-5 py-2 rounded-sm text-white  uppercase
+                            hover:bg-white hover:border hover:border-[#5C407F] hover:text-[#5C407F]
+                            transition ease-in-out duration-300 "
+                                onClick={() => window.location.href = "https://forms.gle/BeJidbUiXhbLpcDU9"}>
+                                register
+                            </button>
                         </div>
                     </ul>
                     <ul className={`
@@ -54,7 +60,12 @@ export default function () {
                         </li>
                         <div className="px-12 py-5">
                             <Button />
+                            <button className="bg-[#5C407F] p-3 rounded-sm text-white mt-3 mb-4 uppercase"
+                                onClick={() => window.location.href = "https://forms.gle/BeJidbUiXhbLpcDU9"}>
+                                register
+                            </button>
                         </div>
+
                     </ul>
                 </div>
             </nav>
