@@ -6,7 +6,7 @@ export const About = () => {
             <div className="mx-auto text-center mt-0 py-0" id="about" >
                 <h1 className="md:mt-12 text-[#5C407F] uppercase font-bold md:text-4xl text-xl">
                     About dyc '22
-                    </h1>
+                </h1>
                 <img src={Img} alt="About-Us-Image" className="mx-auto md:mt-8 mt-6 mb-6 md:w-[75%] w-[85%]" />
                 <div className=" mx-auto  w-5/6 md:w-3/6">
                     <p className="md:text-md text-sm leading-loose">
