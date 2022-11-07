@@ -27,20 +27,20 @@ export default function Footer() {
             <div className="md:w-2/6">
                 <div className="flex items-center space-x-3 py-2">
                     <IoLocation />
-                    <span>
+                    <span className="md:tex-sm text-xs">
                         No. 3, Arigidi Street, Old Bodija,
                         Ibadan, Oyo State.
                     </span>
                 </div>
                 <div className="flex items-center space-x-3 py-2">
                     <IoMdMail />
-                    <span>
+                    <span className="md:tex-sm text-xs">
                         dydibadan@gmail.com
                     </span>
                 </div>
                 <div className="flex items-center space-x-3 py-2">
                     <BsFillTelephoneFill />
-                    <span>
+                    <span className="md:tex-sm text-xs">
                         +234 805 530 1983
                     </span>
                 </div>
