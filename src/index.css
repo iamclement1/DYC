@@ -9,5 +9,5 @@
     background: url("./assets/hero.png") no-repeat;
     background-size: 100%;
     background-position: contain;
-
+    height: 100%;
 }

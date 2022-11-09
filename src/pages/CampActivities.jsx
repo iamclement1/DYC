@@ -16,7 +16,7 @@ export default function CampActivity() {
             <h3 className="mt-6 mb-6 uppercase text-gray-500 text-center text-xl font-semibold">
                 Camp Activities
             </h3>
-            <Fade direction="up" cascade>
+            <Fade direction="up" triggerOnce cascade>
                 <div className="mx-auto md:w-3/4 md:flex px-6 py-4 md:px-0 md:py-0 justify-between overflow-hidden ">
                     <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 ">
                         <img src={Fellowship} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />

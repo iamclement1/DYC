@@ -3,15 +3,15 @@ export default function Sponsor() {
     return (
         <>
         <hr className="w-5/6 mx-auto mt-6 "/>
-            <h3 className="text-center text-[#5C407F] text-3xl font-bold mt-8 uppercase">Support us</h3>
+            <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3>
             <div className="w-5/6 md:w-3/6 mx-auto ">
-                <p className="md:text-md text-sm text-center mt-4 leading-7">
+                <p className="md:text-md text-xs text-center mt-4 leading-7">
                     To make the Diocesan Youth Convention (DYC) as affordable and accessible as possible
                     for young people that lack the necessary funds to attend, we have created our
                     financial aid fund, which is used every year in an attempt to make sure that no
                     youth is unable to attend due to financial constraints.
                 </p>
-                <p className="md:text-md text-sm text-center mt-4  leading-7">
+                <p className="md:text-md text-xs text-center mt-4  leading-7">
                     Your donation to the Diocesan Youth Department would be greatly appreciated.
                     We will use these donations to fund the DYC, provide additional programming at DYC, and pay for other program expenses.
                 </p>
@@ -22,7 +22,7 @@ export default function Sponsor() {
                 </h3>
                 <form action="">
                     <div className="block mt-4">
-                        <label htmlFor="name" className="block mb-2">Name</label>
+                        <label htmlFor="name" className="block mb-2 text-start">Name</label>
                         <input type="text" name="name" placeholder="Enter your name"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm
                             rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
@@ -55,7 +55,7 @@ export default function Sponsor() {
                         </div>
                     </div>
                     <div className="flex justify-between items-center mt-6 mb-4">
-                        <div className="text-sm text-gray-500">
+                        <div className="md:text-sm text-xs text-gray-500">
                             <input type="checkbox" /> Donate anonymously
                         </div>
                         <button className="bg-[#5C407F] text-white p-2 rounded-sm ">Donate</button>

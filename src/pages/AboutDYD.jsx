@@ -8,7 +8,7 @@ export default function AboutDYD() {
                     <h3 className="text-purple-800 md:text-2xl text-md text-center mt-4 font-semibold uppercase">
                         About the diocesan youth department
                     </h3>
-                    <p className="text-center text-gray-600 text-sm leading-8 md:w-5/6 mx-auto">
+                    <p className="text-center text-gray-600 md:text-lg mt-3  text-xs md:p-0 p-3 leading-8 md:w-5/6 mx-auto">
                         The Diocesan Youth Department (DYD) is the youth arm of the Ibadan Anglican Diocese, Church of Nigeria. In 1996, the organization was founded to provide opportunities for fellowship, leadership, and service to young people.
                     </p>
                     <div className="md:flex justify-center md:space-x-6 mb-24">

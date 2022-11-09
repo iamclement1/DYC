@@ -14,7 +14,7 @@ export default function Landing() {
         window.scrollTo(0,0);
     }, [])
     return (
-        <div className="w-full">
+        <div>
             <Hero />
             <About />
             <CampActivity />

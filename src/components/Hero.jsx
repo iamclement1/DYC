@@ -4,7 +4,7 @@ import Button from './Button'
 export default function Hero() {
     return (
         <div className="md:mt-12 lg:mt-12 xl:mt-12 mt-20 md:py-32 py-6 hero h-screen text-center text-white">
-            <div className="xl:py-32 lg:py-32 md:py-32 py-6 mb-0" >
+            <div className="md:py-32 py-6 mb-0" >
                 <h2 className="md:text-5xl text-md font-bold uppercase md:mb-6 ">
                     diocesan youth department
                 </h2>
