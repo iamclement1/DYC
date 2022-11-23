@@ -1,8 +1,34 @@
+import { FlutterWaveButton, closePaymentModal, useFlutterwave } from "flutterwave-react-v3"
+import { useState } from "react"
 export default function Sponsor() {
+
+    const [amount, setAmount] = useState(0);
+    const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+    const config = {
+        public_key: 'FLWPUBK_TEST-6712fed870fe318eae2d81de96bf8b73-X',
+        tx_ref: Date.now(),
+        amount: amount,
+        currency: 'NGN',
+        payment_options: 'card, mobilemoney,ussd',
+        customer: {
+            email: email,
+            name: name,
+            phone_number: phone,
+        },
+        customization: {
+            title: 'Support DYC 2022',
+            description: 'Support DYC 2022',
+            logo: ''
+        },
+
+    };
+    const handleFlutterPayment = useFlutterwave(config);
 
     return (
         <>
-        <hr className="w-5/6 mx-auto mt-6 "/>
+            <hr className="w-5/6 mx-auto mt-6 " />
             <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3>
             <div className="w-5/6 md:w-3/6 mx-auto ">
                 <p className="md:text-md text-xs text-center mt-4 leading-7">
@@ -20,47 +46,69 @@ export default function Sponsor() {
                 <h3 className="text-[#5C407F] mt-6 font-semibold text-xl">
                     Donor's Information
                 </h3>
-                <form action="">
+                <div className="container">
                     <div className="block mt-4">
                         <label htmlFor="name" className="block mb-2 text-start">Name</label>
-                        <input type="text" name="name" placeholder="Enter your name"
+                        <input type="text" placeholder="Enter your name"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm
                             rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
                             dark:bg-gray-400 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white
-                            dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                            dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div className="md:flex md:space-x-12">
                         <div className="w-full mt-4 mb-4">
                             <div className="flex md:space-x-60 space-x-20 items-center mb-2">
                                 <label htmlFor="Phone md:text-md text-xs">Phone Number</label>
-                                <span className="text-gray-400 text-xs text-right">Optional</span>
+
                             </div>
-                            <input type="number" name="phone" placeholder="0800 000 0000"
+                            <input type="text" placeholder="0800 000 0000"
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-400
                                 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white
-                                dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                                dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                onChange={(e) => setPhone(e.target.value)} />
 
                         </div>
                         <div className="w-full justify-end mt-4">
                             <div className="flex md:space-x-60 space-x-20 items-center mb-2">
-                                <label htmlFor="Phone md:text-md text-xs">Phone Number</label>
-                                <span className="text-gray-400 text-xs">Optional</span>
+                                <label htmlFor="Phone md:text-md text-xs">Email Address</label>
                             </div>
-                            <input type="text" name="name" placeholder="Enter your name"
+                            <input type="text" placeholder="Enter your email"
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-400
-                            dark:border-gray-400 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 
-                            dark:focus:border-blue-500" />
+                            dark:border-gray-400 dark:placeholder-gray-400 dark:text-white 
+                            dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                onChange={(e) => setEmail(e.target.value)} />
+                        </div>
+                        <div className="w-full justify-end mt-4">
+                            <div className="flex md:space-x-60 space-x-20 items-center mb-2">
+                                <label htmlFor="Phone md:text-md text-xs">Amount</label>
+                            </div>
+                            <input type="number" placeholder="Enter Amount"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-400
+                            dark:border-gray-400 dark:placeholder-gray-400 dark:text-white 
+                            dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                onChange={(e) => setAmount(e.target.value)} />
                         </div>
                     </div>
                     <div className="flex justify-between items-center mt-6 mb-4">
                         <div className="md:text-sm text-xs text-gray-500">
                             <input type="checkbox" /> Donate anonymously
                         </div>
-                        <button className="bg-[#5C407F] text-white p-2 rounded-sm ">Donate</button>
+                        <button className="bg-[#5C407F] text-white p-2 rounded-sm "
+                            onClick={() =>
+                                handleFlutterPayment({
+                                    callback: (response) => {
+                                        console.log(response);
+                                        closePaymentModal();
+                                    },
+                                    onClose: () => { },
+                                })
+                            }>Donate</button>
                     </div>
-                </form>
+                </div>
 
                 <hr />
                 <span className="text-xs text-gray-600">
