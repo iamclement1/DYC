@@ -18,7 +18,7 @@ export default function () {
                             <FaBars name={`${open ? "close" : "menu"}`} />
                         </div>
                     </div>
-                    <ul className="md:flex hidden uppercase items-center md:mr-6">
+                    <ul className="md:flex  font-semibold hidden uppercase items-center md:mr-6">
                         <li>
                             <Link to="#about" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 about dyc 22
@@ -29,11 +29,14 @@ export default function () {
                             <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 about dyd
                             </Link>
+                            <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                                meet our ministers
+                            </Link>
                         </li>
-                        <div className="md:flex md:space-x-7 hidden">
+                        {/* <div className="md:flex md:space-x-7 hidden">
                             <Button Text="Donate" />
                             
-                        </div>
+                        </div> */}
                     </ul>
                     <ul className={`
                     md:hidden bg-white fixed uppercase w-full top-0 overflow-y-auto bottom-0 py-24 md:px-4
@@ -53,9 +56,14 @@ export default function () {
                                 about dyd
                             </Link>
                         </li>
-                        <div className="px-12 py-5">
+                        <li className="">
+                            <Link to="/" className="py-3 hover:text-[#5C407F] px-12 inline-block">
+                                meet our ministers
+                            </Link>
+                        </li>
+                        {/* <div className="px-12 py-5">
                             <Button Text="Donate" />
-                        </div>
+                        </div> */}
 
                     </ul>
                 </div>

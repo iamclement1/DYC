@@ -31,22 +31,24 @@ export default function Sponsor() {
             <hr className="w-5/6 mx-auto mt-6 " />
             <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3>
             <div className="w-5/6 md:w-3/6 mx-auto ">
-                <p className="md:text-md text-xs text-center mt-4 leading-7">
+                <p className="md:text-md text-sm text-center mt-4 leading-7">
                     To make the Diocesan Youth Convention (DYC) as affordable and accessible as possible
                     for young people that lack the necessary funds to attend, we have created our
                     financial aid fund, which is used every year in an attempt to make sure that no
                     youth is unable to attend due to financial constraints.
                 </p>
-                <p className="md:text-md text-xs text-center mt-4  leading-7">
+                <p className="md:text-md text-sm text-center mt-4  leading-7">
                     Your donation to the Diocesan Youth Department would be greatly appreciated.
                     We will use these donations to fund the DYC, provide additional programming at DYC, and pay for other program expenses.
                 </p>
             </div>
+            <hr className="m-6" />
+
             <div className="md:w-4/6 w-5/6 mx-auto text-center">
                 <h3 className="text-[#5C407F] mt-6 font-semibold text-xl">
                     Donor's Information
                 </h3>
-                <div className="container">
+                {/* <div className="container">
                     <div className="block mt-4">
                         <label htmlFor="name" className="block mb-2 text-start">Name</label>
                         <input type="text" placeholder="Enter your name"
@@ -108,10 +110,9 @@ export default function Sponsor() {
                                 })
                             }>Donate</button>
                     </div>
-                </div>
+                </div> */}
 
-                <hr />
-                <span className="text-xs text-gray-600">
+                <span className="text-sm mt-5 text-gray-600">
                     If you would like to make a transfer instead, you can send your donations to the account provided below
                 </span>
                 <div className="mt-8">
