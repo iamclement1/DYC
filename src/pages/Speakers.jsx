@@ -10,9 +10,9 @@ export default function Speakers() {
                 Meet our Speakers
             </h3>
             <hr className='m-4 w-1/6 mx-auto text-3xl' />
-            <p className='text-center'>
+            {/* <p className='text-center'>
                 Meet our ministers
-            </p>
+            </p> */}
             <Carousel infiniteLoop={true} autoPlay={true} interval={2500} showStatus={false} showThumbs={false}
             emulateTouch={true}>
                 <div>

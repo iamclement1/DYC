@@ -42,12 +42,12 @@ export default function Sponsor() {
                     We will use these donations to fund the DYC, provide additional programming at DYC, and pay for other program expenses.
                 </p>
             </div>
-            <hr className="m-6" />
+            <hr className="m-6 w-3/6 mx-auto" />
 
             <div className="md:w-4/6 w-5/6 mx-auto text-center">
-                <h3 className="text-[#5C407F] mt-6 font-semibold text-xl">
+                {/* <h3 className="text-[#5C407F] mt-6 font-semibold text-xl">
                     Donor's Information
-                </h3>
+                </h3> */}
                 {/* <div className="container">
                     <div className="block mt-4">
                         <label htmlFor="name" className="block mb-2 text-start">Name</label>
