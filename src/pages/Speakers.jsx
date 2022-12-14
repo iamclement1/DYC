@@ -14,7 +14,7 @@ export default function Speakers() {
                 Meet our ministers
             </p> */}
             <Carousel infiniteLoop={true} autoPlay={true} interval={2500} showStatus={false} showThumbs={false}
-            emulateTouch={true}>
+                emulateTouch={true}>
                 <div>
                     <img src={ToluMoody} />
                 </div>
@@ -22,9 +22,45 @@ export default function Speakers() {
                     <img src={Pade} />
                 </div>
                 <div>
-                    <img src={Oludare}/>
+                    <img src={Oludare} />
                 </div>
             </Carousel>
+
+            <main>
+                <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center md:text-2xl text-md md:p-0 p-3 font-semibold">
+                    Worried about what to come to the convention with?
+                </h3>
+                <p className="text-center md:p-0 p-3">
+                    Here is a list of Mandatory and optional items to come with...
+                </p>
+                <div className="md:flex md:w-4/6 md:p-0 p-6 md:m-0 m-2 justify-between md:mx-auto">
+                    <div className='w-4/6'>
+                        <h3 className="text-gray-500 text-2xl font-semibold uppercase">
+                            Mandaory
+                        </h3>
+                        <ul>
+                            <li>Bible & Jotter</li>
+                            <li>Toiletries</li>
+                            <li>Comfortable & decent outfits (inclusive of sport wear for morning workouts).</li>
+                            <li>Comfortable footwear</li>
+                            <li>Bathing Towel</li>
+                            <li>Bedsheet and Covering Cloth.</li>
+                            <li>Scarf, Baret or Face Cap (for ladies)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="text-gray-500 text-2xl font-semibold uppercase">
+                            Optional
+                        </h3>
+                        <ul>
+                            <li>Bathing Bucket & Bowl</li>
+                            <li>Pillow.</li>
+                            <li>Sweaters & Socks.</li>
+                            <li>Plater & Cultery.   </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
 
         </>
     )

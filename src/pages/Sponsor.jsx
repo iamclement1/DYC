@@ -113,7 +113,7 @@ export default function Sponsor() {
                 </div> */}
 
                 <span className="text-sm mt-5 text-gray-600">
-                    If you would like to make a transfer instead, you can send your donations to the account provided below
+                    If you would like to make a transfer, you can send your donations to the account provided below 👇.
                 </span>
                 <div className="mt-8">
                     <span className="text-xs text-gray-600 uppercase">account number</span>
