@@ -31,14 +31,14 @@ export default function Speakers() {
                     Worried about what to come to the convention with?
                 </h3>
                 <p className="text-center md:p-0 p-3">
-                    Here is a list of Mandatory and optional items to come with...
+                    Here's a list of items to come with...
                 </p>
                 <div className="md:flex md:w-4/6 md:p-0 p-6 md:m-0 m-2 justify-between md:mx-auto">
-                    <div className='w-4/6'>
-                        <h3 className="text-gray-500 text-2xl font-semibold uppercase">
+                    <div className='md:w-4/6 '>
+                        <h3 className="text-gray-500 text-2xl font-semibold uppercase md:text-left text-center  ">
                             Mandaory
                         </h3>
-                        <ul>
+                        <ul className='md:text-left text-center'>
                             <li>Bible & Jotter</li>
                             <li>Toiletries</li>
                             <li>Comfortable & decent outfits (inclusive of sport wear for morning workouts).</li>
@@ -48,11 +48,11 @@ export default function Speakers() {
                             <li>Scarf, Baret or Face Cap (for ladies)</li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 className="text-gray-500 text-2xl font-semibold uppercase">
+                    <div className=''>
+                        <h3 className="text-gray-500 text-2xl font-semibold uppercase md:text-left text-center md:mt-0 mt-5">
                             Optional
                         </h3>
-                        <ul>
+                        <ul className='md:text-left text-center'>
                             <li>Bathing Bucket & Bowl</li>
                             <li>Pillow.</li>
                             <li>Sweaters & Socks.</li>
