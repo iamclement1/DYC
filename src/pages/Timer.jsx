@@ -1,69 +1,74 @@
-// import Countdown from '../components/Countdown'
+import React, { useEffect, useState } from 'react';
 
-import { useState, useEffect } from "react";
-import { getRemainingTimestamp } from "../util/timerCountdown"; 
+const Timer = ({ eventDate }) => {
+    const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
-const defaultRemainingTime = {
-    seconds: '00',
-    minutes: '00',
-    hours: '00',
-    days: '00'
-}
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeRemaining(calculateTimeRemaining());
+        }, 1000);
 
+        return () => clearInterval(interval);
+    }, []);
 
-export default function Timer({countdownTimestampMs}) {
-    const [ remainingTime, setRemainingTime ] = useState(defaultRemainingTime)
-    
+    function calculateTimeRemaining() {
+        const now = new Date().getTime();
+        const eventTime = new Date(eventDate).getTime();
+        const timeDifference = eventTime - now;
 
-    useEffect(() =>{
-        // creates an interval that is executed every seconds
-        const intervalId  = setInterval(() => {
-            updateRemainingTime(countdownTimestampMs);
-        }, 1000)
-        return () => clearTimeout(intervalId) //stops interval
-    }, [countdownTimestampMs])
+        if (timeDifference <= 0) {
+            return {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+            };
+        }
 
-    // creates a function that is called everytime to update the timer
-    function updateRemainingTime(countdown) {
-        setRemainingTime(getRemainingTimestamp(countdown))
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+            (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        return {
+            days,
+            hours,
+            minutes,
+            seconds,
+        };
     }
 
     return (
-        <section className="bg-[#5C407F] p-12 mt-8">
-        <div className=" text-4xl text-center text-white">
-            <span className=""> {remainingTime.days} </span>
-            <span className=""> days </span>
-            <span> :</span>
-            <span> {remainingTime.hours} </span>
-            <span> hours </span>
-            <span>:</span>
-            <span> {remainingTime.minutes} </span>
-            <span> minutes </span>
-            <span>:</span>
-            <span> {remainingTime.seconds} </span>
-            <span> seconds </span>
+        <div>
+            <div className='bg-gradient-to-r from-fuchsia-600 to-purple-900 p-12 mt-8'>
+                <div className="flex items-center justify-center gap-12">
+                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.days} </span>
+                        <span>Days</span>
+                    </div>
+                    <span className='font-bold text-5xl text-white '>:</span>
+                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.hours} </span>
+                        <span>Hours</span>
+                    </div>
+                    <span className='font-bold text-5xl text-white '>:</span>
+
+                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.minutes}</span>
+                        <span>Minutes</span>
+                    </div>
+                    <span className='font-bold text-5xl text-white '>:</span>
+
+                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.seconds} </span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        </section>
-    )
-}
+    );
+};
 
-
-// export default function Timer() {
-//     const THREE_DAYS_IN_MS = 118 * 24 * 60 * 60 * 1000;
-//     const NOW_IN_MS = new Date().getTime();
-
-//     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-
-//     return (
-//         <div className="mt-5">
-
-//             <Countdown targetDate={dateTimeAfterThreeDays} />
-//             <div className="flex justify-center">
-//                 <button className="bg-[#5C407F] p-3 rounded-sm text-white mt-16 mb-4 uppercase"
-//                     onClick={() => window.location.href = "https://forms.gle/BeJidbUiXhbLpcDU9"}>
-//                     register
-//                 </button>
-//             </div>
-//         </div>
-//     );
-// }
+export default Timer;

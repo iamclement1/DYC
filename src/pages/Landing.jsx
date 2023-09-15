@@ -15,6 +15,8 @@ export default function Landing() {
 
     const [ isLoading, setIsLoading ] = useState(false);
 
+    const eventDate = '2023-12-01T16:00:00Z'
+
 
     useEffect(() => {
         window.scrollTo(0,0);
@@ -25,7 +27,7 @@ export default function Landing() {
             <Hero />
             <About />
             <CampActivity />
-            {/* <Timer countdownTimestampMs={1659983662000} /> */}
+            <Timer eventDate={eventDate} />
             <Speakers />
             
             <Sponsor />
