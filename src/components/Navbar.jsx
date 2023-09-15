@@ -20,18 +20,18 @@ export default function () {
                     </div>
                     <ul className="md:flex  font-semibold hidden uppercase items-center md:mr-6">
                         <li>
-                            <Link to="#about" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            <a href="#about" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 about dyc 22
-                            </Link>
-                            <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            </a>
+                            <a href="#sponsor" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 support us
-                            </Link>
-                            <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            </a>
+                            <a href="#about-dyd" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 about dyd
-                            </Link>
-                            <Link to="/" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            </a>
+                            <a href="#speakers" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
                                 meet our ministers
-                            </Link>
+                            </a>
                         </li>
                         {/* <div className="md:flex md:space-x-7 hidden">
                             <Button Text="Donate" />
@@ -42,24 +42,24 @@ export default function () {
                     md:hidden bg-white fixed uppercase w-full top-0 overflow-y-auto bottom-0 py-24 md:px-4
                     duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
                         <li className="">
-                            <Link to="/" className="py-3 hover:text-[#5C407F] px-12 inline-block">
+                            <a href="#about" className="py-3 hover:text-[#5C407F] px-12 inline-block">
                                 about dyc 22
-                            </Link>
+                            </a>
                         </li>
                         <li className="">
-                            <Link to="/" className="py-3 hover:text-[#5C407F] px-12 inline-block">
+                            <a href="#sponsor" className="py-3 hover:text-[#5C407F] px-12 inline-block">
                                 support us
-                            </Link>
+                            </a>
                         </li>
                         <li className="">
-                            <Link to="/" className="py-3 hover:text-[#5C407F] px-12 inline-block">
+                            <a href="#about-dyd" className="py-3 hover:text-[#5C407F] px-12 inline-block">
                                 about dyd
-                            </Link>
+                            </a>
                         </li>
                         <li className="">
-                            <Link to="/" className="py-3 hover:text-[#5C407F] px-12 inline-block">
+                            <a href="#speakers" className="py-3 hover:text-[#5C407F] px-12 inline-block">
                                 meet our ministers
-                            </Link>
+                            </a>
                         </li>
                         {/* <div className="px-12 py-5">
                             <Button Text="Donate" />

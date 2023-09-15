@@ -2,7 +2,7 @@ import Img from '../assets/dyc2.png'
 
 export const About = () => {
     return (
-        <main>
+        <main id='about'>
             <div className="mx-auto text-center mt-0 py-0" id="about" >
                 <h1 className="md:mt-12 text-[#5C407F] uppercase font-bold md:text-4xl text-xl">
                     About dyc '22

@@ -5,7 +5,7 @@ import Pade from '../assets/pade.jpg';
 import Oludare from '../assets/Oludare.jpg';
 export default function Speakers() {
     return (
-        <>
+        <div id="speakers">
             <h3 className='md:text-3xl text-xl font-semibold text-center mt-12'>
                 Meet our Speakers
             </h3>
@@ -62,6 +62,6 @@ export default function Speakers() {
                 </div>
             </main>
 
-        </>
+        </div>
     )
 }

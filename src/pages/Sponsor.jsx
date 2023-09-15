@@ -27,7 +27,7 @@ export default function Sponsor() {
     const handleFlutterPayment = useFlutterwave(config);
 
     return (
-        <>
+        <div id="sponsor">
             <hr className="w-5/6 mx-auto mt-6 " />
             <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3>
             <div className="w-5/6 md:w-3/6 mx-auto ">
@@ -131,6 +131,6 @@ export default function Sponsor() {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }

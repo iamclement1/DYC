@@ -2,7 +2,7 @@ import Bishop from '../assets/Bishop.png'
 export default function AboutDYD() {
     return (
         <>
-            <section>
+            <section id='about-dyd'>
                 <div className="md:w-5/6 mx-auto mt-6">
                     <img src={Bishop} alt="Bishop__Image" />
                     <h3 className="text-purple-800 md:text-2xl text-md text-center mt-4 font-semibold uppercase">
