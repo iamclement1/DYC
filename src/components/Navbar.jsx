@@ -1,6 +1,7 @@
 import Logo from '../assets/Diocesan-Logo.svg'
 import { useEffect, useState } from "react";
 import { FaBars } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 
 export default function () {
@@ -32,21 +33,23 @@ export default function () {
             <nav className={`bg-${scrolled ? 'white' : "transparent"} text-${scrolled ? 'black' : 'white'} fixed inset-x-0 top-0 z-10 w-full mb-5 `}>
                 <div className="flex items-center text-sm justify-between md:pr-20">
                     <div className="z-50 p-3 md:w-auto w-full flex justify-between items-center">
-                        <img src={Logo} alt="brand__logo" className="md:ml-12 
-                        md:w-full md:h-full w-12"/>
+                        <Link to="/">
+                            <img src={Logo} alt="brand__logo" className="md:ml-12 
+                        md:w-full md:h-16 w-10"/>
+                        </Link>
                         <div className="text-2xl md:hidden items-center" onClick={() => setOpen(!open)}>
                             <FaBars name={`${open ? "close" : "menu"}`} />
                         </div>
                     </div>
                     <ul className="md:flex  font-semibold hidden uppercase items-center md:mr-6">
                         <li>
-                            <a href="#about" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            <a href="#about" className="py-7 px-3 inline-block md:mr-4 hover:text-black">
                                 about dyc 23
                             </a>
-                            <a href="#sponsor" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
-                                support us
-                            </a>
-                            <a href="#about-dyd" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
+                            <Link to="/partner" className="py-7 px-3 inline-block md:mr-4 hover:text-black">
+                                partner with us
+                            </Link>
+                            <a href="#about-dyd" className="py-7 px-3 inline-block md:mr-4 hover:text-black">
                                 about dyd
                             </a>
                             {/* <a href="#speakers" className="py-7 px-3 inline-block md:mr-4 hover:text-[#5C407F]">
@@ -67,9 +70,9 @@ export default function () {
                             </a>
                         </li>
                         <li className="">
-                            <a href="#sponsor" className="py-3 hover:text-[#5C407F] px-12 inline-block">
-                                support us
-                            </a>
+                            <Link to="/partner" className="py-3 hover:text-[#5C407F] px-12 inline-block">
+                                partner with us
+                            </Link>
                         </li>
                         <li className="">
                             <a href="#about-dyd" className="py-3 hover:text-[#5C407F] px-12 inline-block">

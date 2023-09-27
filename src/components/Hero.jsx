@@ -15,7 +15,7 @@ export default function Hero() {
             >
                 {/* Black Overlay */}
                 <div
-                    className="absolute inset-0 bg-black opacity-50" />
+                    className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-purple-900 opacity-70" />
             </div>
 
             {/* Content */}

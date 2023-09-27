@@ -3,7 +3,6 @@ import Hero from '../components/Hero'
 import { About } from './About'
 import AboutDYD from './AboutDYD'
 import CampActivity from './CampActivities'
-import Sponsor from './Sponsor'
 import Timer from './Timer'
 import Loader from '../components/Loader/Loader'
 // import Speakers from './Speakers'
@@ -27,8 +26,6 @@ export default function Landing() {
             <CampActivitesCarousel />
             <Timer eventDate={eventDate} />
             {/* <Speakers /> */}
-
-            <Sponsor />
             <AboutDYD />
             <BackToTopButton />
         </div>

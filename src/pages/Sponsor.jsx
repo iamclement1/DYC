@@ -1,5 +1,6 @@
 import { FlutterWaveButton, closePaymentModal, useFlutterwave } from "flutterwave-react-v3"
 import { useState } from "react"
+import PartnershipHero from "../components/PartnershipHero";
 export default function Sponsor() {
 
     const [amount, setAmount] = useState(0);
@@ -27,10 +28,11 @@ export default function Sponsor() {
     const handleFlutterPayment = useFlutterwave(config);
 
     return (
-        <div id="sponsor">
-            <hr className="w-5/6 mx-auto mt-6 " />
-            <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3>
-            <div className="w-5/6 md:w-4/6 mx-auto ">
+        <div>
+            <PartnershipHero />
+            {/* <hr className="w-5/6 mx-auto mt-6 " /> */}
+            {/* <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3> */}
+            {/* <div className="w-5/6 md:w-4/6 mx-auto ">
                 <p className="md:text-[20px] text-sm text-center mt-4 leading-loose opacity-60">
                     To make the Diocesan Youth Convention (DYC) as affordable and accessible as possible
                     for young people that lack the necessary funds to attend, we have created our
@@ -41,8 +43,38 @@ export default function Sponsor() {
                     Your donation to the Diocesan Youth Department would be greatly appreciated.
                     We will use these donations to fund the DYC, provide additional programming at DYC, and pay for other program expenses.
                 </p>
+            </div> */}
+
+            <div className="md:flex justify-between gap-4 md:mx-28 mx-6 my-24 ">
+                <div className="max-w-lg md:mb-0 mb-12">
+                    <h1 className="md:text-3xl mb-8 opacity-70">Local <span className="font-extrabold">Payments</span></h1>
+                    <p className="my-4 opacity-40 text-sm">
+                        Giving is more than a simple act; it is a powerful expression of love and a demonstration of faith. Your generosity serves as the lifeblood of our various ministries, allowing us to extend our reach both locally and globally.
+                    </p>
+                    <p className="opacity-40 text-sm">
+                        Within the borders of Nigeria, we offer multiple local payment methods specifically designed for your convenience and security.
+                    </p>
+                </div>
+
+                <div>
+                    <div>
+                        <h1 className="mb-2 font-bold opacity-70">Bank</h1>
+                        <p className="text-sm opacity-60">First Bank</p>
+                    </div>
+                    <div className="my-6">
+                        <h1 className="mb-2 opacity-70 ">Account <span className="font-bold">Name</span></h1>
+                        <p className="text-sm opacity-60">Diocesan Youth Department</p>
+                    </div>
+                    <div>
+                        <h1 className="mb-2 opacity-70">Account <span className="font-bold">Number</span></h1>
+                        <p className="text-sm opacity-60">
+                            2031428004
+
+                        </p>
+                    </div>
+                </div>
             </div>
-            <hr className="m-6 w-3/6 mx-auto" />
+            {/* <hr className="m-6 w-3/6 mx-auto" /> */}
 
             <div className="md:w-4/6 w-5/6 mx-auto text-center">
                 {/* <h3 className="text-[#5C407F] mt-6 font-semibold text-xl">
@@ -112,30 +144,9 @@ export default function Sponsor() {
                     </div>
                 </div> */}
 
-                <span className="text-[20px] mt-5 text-gray-600">
+                {/* <span className="text-[20px] mt-5 text-gray-600">
                     If you would like to make a transfer, you can send your donations to the account provided below 👇.
-                </span>
-                <div className="mt-8">
-                    <div>
-                        <span className="md:text-xl text-sm  opacity-60 uppercase">account number</span>
-                        <h3 className="text-[20px] text-[#5C407F] font-semibold">
-                            2031428004
-                        </h3>
-                    </div>
-                    <div className="my-3">
-                        <span className="md:text-xl text-sm  text-gray-600 uppercase">account Name</span>
-                        <h3 className="text-[20px] text-[#5C407F] font-semibold">
-                            DIOCESAN YOUTH DEPARTMENT
-                        </h3>
-                    </div>
-                    <div>
-                        <span className="md:text-xl text-sm  text-gray-600 uppercase">BANK NAME</span>
-                        <h3 className="text-xl text-[#5C407F] font-semibold uppercase">
-                            first Bank
-                        </h3>
-                    </div>
-
-                </div>
+                </span> */}
             </div>
         </div>
     )

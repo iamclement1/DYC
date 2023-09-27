@@ -3,6 +3,7 @@ import './App.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
+import Sponsor from './pages/Sponsor'
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
       <div className="App font-Montserrat">
         <Navbar />
         <Routes>
-          <Route path="/" element={ <Landing /> } />
-          
+          <Route path="/" element={<Landing />} />
+          <Route path="/partner" element={<Sponsor />} />
+
         </Routes>
         <Footer />
       </div>

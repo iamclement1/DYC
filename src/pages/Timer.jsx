@@ -44,12 +44,12 @@ const Timer = ({ eventDate }) => {
         <div>
             <div className='bg-gradient-to-r from-fuchsia-600 to-purple-900 p-12 mt-8'>
                 <div className="flex items-center justify-center md:gap-12 gap-1  ">
-                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 md:px-0 md:py-0 px-7 py-5'>
+                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 p-5'>
                         <span className='md:text-5xl text-2xl text-[#5C407F] md:pb-4 font-bold' >{timeRemaining.days} </span>
                         <span className='md:text-xl text-sm'>Days</span>
                     </div>
                     <span className='font-bold md:text-5xl text-md text-white '>:</span>
-                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 md:px-0 md:py-0 px-7 py-5'>
+                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 p-5'>
                         <span className='md:text-5xl text-2xl text-[#5C407F] md:pb-4 font-bold' >{timeRemaining.hours} </span>
                         <span className='md:text-xl text-sm'>Hours</span>
                     </div>
