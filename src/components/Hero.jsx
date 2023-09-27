@@ -19,14 +19,14 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="md:py-60 py-6 mb-0 relative z-10">
-                <h1 className="md:text-3xl text-md font-bold uppercase md:mb-7">
+            <div className="md:py-60 py-72 mb-0 relative z-10">
+                <h1 className="md:text-3xl text-2xl font-bold uppercase md:mb-7">
                     Welcome to
                 </h1>
-                <h2 className="md:text-6xl text-md font-bold uppercase md:mb-6 ">
+                <h2 className="md:text-6xl text-4xl font-bold uppercase md:mb-6 md:py-0 py-6">
                     diocesan youth department
                 </h2>
-                <span className="md:py-6 text-center text-white md:text-2xl text-sm font-semibold uppercase block">
+                <span className="md:py-6 py-8 text-center text-white md:text-2xl text-sm font-semibold uppercase block">
                     #dyc'23
                 </span>
                 <motion.div
