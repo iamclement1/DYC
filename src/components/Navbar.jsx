@@ -63,7 +63,7 @@ export default function () {
                     duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
                         <li className="">
                             <a href="#about" className="py-3 hover:text-[#5C407F] px-12 inline-block">
-                                about dyc 22
+                                about dyc 23
                             </a>
                         </li>
                         <li className="">
