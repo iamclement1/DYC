@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .hero {
-    background: url("./assets/hero.png") no-repeat;
+    position: relative;
+    background: url("./assets/DYC3.jpeg") no-repeat;
     background-size: 100%;
     background-position: contain;
     height: 100%;
