@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
     return (
-        <div className="relative md:py-32 py-6 h-screen text-center text-white">
+        <div className="relative md:py-32 py-6 md:h-screen text-center text-white">
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0"
@@ -26,7 +26,7 @@ export default function Hero() {
                 <h2 className="md:text-6xl text-4xl font-bold uppercase md:mb-6 md:py-0 py-6">
                     diocesan youth department
                 </h2>
-                <span className="md:py-6 py-8 text-center text-white md:text-2xl text-sm font-semibold uppercase block">
+                <span className="md:py-6 py-3 text-center text-white md:text-2xl text-sm font-semibold uppercase block">
                     #dyc'23
                 </span>
                 <motion.div

@@ -76,7 +76,7 @@ export default function CampActivity() {
 
             <main>
                 <div>
-                    <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
+                    <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center md:text-xl text-sm font-semibold">
                         Theme:
                     </h3>
                     <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
@@ -84,7 +84,7 @@ export default function CampActivity() {
                     </h2>
                 </div>
                 <div>
-                    <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
+                    <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center md:text-xl text-sm  font-semibold">
                         Date:
                     </h3>
                     <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
@@ -92,7 +92,7 @@ export default function CampActivity() {
                     </h2>
                 </div>
                 <div>
-                    <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center text-xl font-semibold">
+                    <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center md:text-xl text-sm font-semibold">
                         Venue:
                     </h3>
                     <h2 className=" mx-auto md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">

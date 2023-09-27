@@ -117,20 +117,20 @@ export default function Sponsor() {
                 </span>
                 <div className="mt-8">
                     <div>
-                        <span className="text-[20px] opacity-60 uppercase">account number</span>
-                        <h3 className="text-[20px] text-purple-800 font-semibold">
+                        <span className="md:text-xl text-sm  opacity-60 uppercase">account number</span>
+                        <h3 className="text-[20px] text-[#5C407F] font-semibold">
                             2031428004
                         </h3>
                     </div>
                     <div className="my-3">
-                        <span className="text-[20px] text-gray-600 uppercase">account Name</span>
-                        <h3 className="text-[20px] text-purple-800 font-semibold">
+                        <span className="md:text-xl text-sm  text-gray-600 uppercase">account Name</span>
+                        <h3 className="text-[20px] text-[#5C407F] font-semibold">
                             DIOCESAN YOUTH DEPARTMENT
                         </h3>
                     </div>
                     <div>
-                        <span className="text-[20px] text-gray-600 uppercase">BANK NAME</span>
-                        <h3 className="text-xl text-purple-800 font-semibold uppercase">
+                        <span className="md:text-xl text-sm  text-gray-600 uppercase">BANK NAME</span>
+                        <h3 className="text-xl text-[#5C407F] font-semibold uppercase">
                             first Bank
                         </h3>
                     </div>

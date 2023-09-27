@@ -8,6 +8,7 @@ import Timer from './Timer'
 import Loader from '../components/Loader/Loader'
 // import Speakers from './Speakers'
 import BackToTopButton from '../components/BackToTop'
+import CampActivitesCarousel from './CampActivitesCarousel'
 
 
 export default function Landing() {
@@ -22,7 +23,8 @@ export default function Landing() {
         <div>
             <Hero />
             <About />
-            <CampActivity />
+            {/* <CampActivity /> */}
+            <CampActivitesCarousel />
             <Timer eventDate={eventDate} />
             {/* <Speakers /> */}
 
