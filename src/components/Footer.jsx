@@ -1,4 +1,4 @@
-import Logo from '../assets/Diocesan-Logo.svg'
+import Logo from '../assets/DiocesanLogo.svg'
 import { AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai'
 import { RiFacebookCircleLine } from 'react-icons/ri';
 import { IoMdMail } from 'react-icons/io';

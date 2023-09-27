@@ -30,14 +30,14 @@ export default function Sponsor() {
         <div id="sponsor">
             <hr className="w-5/6 mx-auto mt-6 " />
             <h3 className="text-center text-[#5C407F] md:text-3xl text-xl font-bold mt-8 uppercase">Support us</h3>
-            <div className="w-5/6 md:w-3/6 mx-auto ">
-                <p className="md:text-sm text-gray-700 text-sm text-center mt-4 leading-7">
+            <div className="w-5/6 md:w-4/6 mx-auto ">
+                <p className="md:text-[20px] text-sm text-center mt-4 leading-loose opacity-60">
                     To make the Diocesan Youth Convention (DYC) as affordable and accessible as possible
                     for young people that lack the necessary funds to attend, we have created our
                     financial aid fund, which is used every year in an attempt to make sure that no
                     youth is unable to attend due to financial constraints.
                 </p>
-                <p className="md:text-sm text-gray-700 text-sm text-center mt-4  leading-7">
+                <p className="md:text-[20px] text-sm text-center mt-4  leading-loose opacity-60">
                     Your donation to the Diocesan Youth Department would be greatly appreciated.
                     We will use these donations to fund the DYC, provide additional programming at DYC, and pay for other program expenses.
                 </p>
@@ -112,22 +112,28 @@ export default function Sponsor() {
                     </div>
                 </div> */}
 
-                <span className="text-sm mt-5 text-gray-600">
+                <span className="text-[20px] mt-5 text-gray-600">
                     If you would like to make a transfer, you can send your donations to the account provided below 👇.
                 </span>
                 <div className="mt-8">
-                    <span className="text-xs text-gray-600 uppercase">account number</span>
-                    <h3 className="text-xl text-purple-800 font-semibold">
-                        2031428004
-                    </h3>
-                    <span className="text-xs text-gray-600 uppercase">account Name</span>
-                    <h3 className="text-xl text-purple-800 font-semibold">
-                        DIOCESAN YOUTH DEPARTMENT
-                    </h3>
-                    <span className="text-xs text-gray-600 uppercase">BANK NAME</span>
-                    <h3 className="text-xl text-purple-800 font-semibold uppercase">
-                        first Bank
-                    </h3>
+                    <div>
+                        <span className="text-[20px] opacity-60 uppercase">account number</span>
+                        <h3 className="text-[20px] text-purple-800 font-semibold">
+                            2031428004
+                        </h3>
+                    </div>
+                    <div className="my-3">
+                        <span className="text-[20px] text-gray-600 uppercase">account Name</span>
+                        <h3 className="text-[20px] text-purple-800 font-semibold">
+                            DIOCESAN YOUTH DEPARTMENT
+                        </h3>
+                    </div>
+                    <div>
+                        <span className="text-[20px] text-gray-600 uppercase">BANK NAME</span>
+                        <h3 className="text-xl text-purple-800 font-semibold uppercase">
+                            first Bank
+                        </h3>
+                    </div>
 
                 </div>
             </div>

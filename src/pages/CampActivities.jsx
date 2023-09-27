@@ -88,7 +88,7 @@ export default function CampActivity() {
                         Date:
                     </h3>
                     <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
-                        December 18 - 21, 2022
+                        17 - 20 December, 2022
                     </h2>
                 </div>
                 <div>
