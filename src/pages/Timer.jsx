@@ -43,26 +43,28 @@ const Timer = ({ eventDate }) => {
     return (
         <div>
             <div className='bg-gradient-to-r from-fuchsia-600 to-purple-900 p-12 mt-8'>
-                <div className="md:flex items-center justify-center gap-12">
-                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
-                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.days} </span>
-                        <span>Days</span>
+                <div className="flex items-center justify-center md:gap-12 gap-1  ">
+                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 md:px-0 md:py-0 px-7 py-5'>
+                        <span className='md:text-5xl text-2xl text-[#5C407F] md:pb-4 font-bold' >{timeRemaining.days} </span>
+                        <span className='md:text-xl text-sm'>Days</span>
                     </div>
-                    <span className='font-bold text-5xl text-white w-[12px] mx-auto flex md:items-start items-center '>:</span>
-                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
-                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.hours} </span>
-                        <span>Hours</span>
+                    <span className='font-bold md:text-5xl text-md text-white '>:</span>
+                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 md:px-0 md:py-0 px-7 py-5'>
+                        <span className='md:text-5xl text-2xl text-[#5C407F] md:pb-4 font-bold' >{timeRemaining.hours} </span>
+                        <span className='md:text-xl text-sm'>Hours</span>
                     </div>
-                    <span className='font-bold text-5xl text-white w-[12px] mx-auto flex md:items-start items-center '>:</span>
-                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
-                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.minutes}</span>
-                        <span>Minutes</span>
-                    </div>
-                    <span className='font-bold text-5xl text-white w-[12px] mx-auto flex md:items-start items-center '>:</span>
+                    <span className='font-bold md:text-5xl text-md text-white '>:</span>
 
-                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
-                        <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.seconds} </span>
-                        <span>Seconds</span>
+                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 p-5'>
+                        <span className='md:text-5xl text-2xl text-[#5C407F] md:pb-4 font-bold' >{timeRemaining.minutes}</span>
+                        <span className='md:text-xl text-sm'>Minutes</span>
+                    </div>
+                    <span className='font-bold md:text-5xl text-md text-white '>:</span>
+
+
+                    <div className='md:w-[249px] w-[80px] flex flex-col items-center bg-white md:p-12 p-5'>
+                        <span className='md:text-5xl text-2xl text-[#5C407F] md:pb-4 font-bold' >{timeRemaining.seconds} </span>
+                        <span className='md:text-xl text-sm'>Seconds</span>
                     </div>
                 </div>
             </div>
