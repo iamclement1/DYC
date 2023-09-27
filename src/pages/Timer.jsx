@@ -43,25 +43,24 @@ const Timer = ({ eventDate }) => {
     return (
         <div>
             <div className='bg-gradient-to-r from-fuchsia-600 to-purple-900 p-12 mt-8'>
-                <div className="flex items-center justify-center gap-12">
-                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                <div className="md:flex items-center justify-center gap-12">
+                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
                         <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.days} </span>
                         <span>Days</span>
                     </div>
-                    <span className='font-bold text-5xl text-white '>:</span>
-                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                    <span className='font-bold text-5xl text-white w-[12px] mx-auto flex md:items-start items-center '>:</span>
+                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
                         <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.hours} </span>
                         <span>Hours</span>
                     </div>
-                    <span className='font-bold text-5xl text-white '>:</span>
-
-                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                    <span className='font-bold text-5xl text-white w-[12px] mx-auto flex md:items-start items-center '>:</span>
+                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
                         <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.minutes}</span>
                         <span>Minutes</span>
                     </div>
-                    <span className='font-bold text-5xl text-white '>:</span>
+                    <span className='font-bold text-5xl text-white w-[12px] mx-auto flex md:items-start items-center '>:</span>
 
-                    <div className='w-[249px] flex flex-col items-center bg-white p-12'>
+                    <div className='md:w-[249px] flex flex-col items-center bg-white p-12'>
                         <span className='text-5xl text-purple-900 pb-4 font-bold' >{timeRemaining.seconds} </span>
                         <span>Seconds</span>
                     </div>
