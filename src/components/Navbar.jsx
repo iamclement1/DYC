@@ -1,6 +1,7 @@
 import Logo from '../assets/Diocesan-Logo.svg'
 import { useEffect, useState } from "react";
 import { FaBars } from 'react-icons/fa'
+import { LuHeartHandshake } from 'react-icons/lu'
 import { Link } from 'react-router-dom';
 
 
@@ -37,8 +38,12 @@ export default function () {
                             <img src={Logo} alt="brand__logo" className="md:ml-12 
                         md:w-full md:h-16 w-10"/>
                         </Link>
-                        <div className="text-2xl md:hidden items-center" onClick={() => setOpen(!open)}>
-                            <FaBars name={`${open ? "close" : "menu"}`} />
+                        <div className="flex space-x-4 text-2xl md:hidden items-center" >
+                            <Link to='/partner' className='flex space-x-2 items-center justify-center'>
+                                <LuHeartHandshake className='text-[16px]' />
+                                <span className='text-sm hover:underline'>Partner with us</span>
+                            </Link>
+                            <FaBars name={`${open ? "close" : "menu"}`} onClick={() => setOpen(!open)} />
                         </div>
                     </div>
                     <ul className="md:flex  font-semibold hidden uppercase items-center md:mr-6">

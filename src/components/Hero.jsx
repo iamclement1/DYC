@@ -20,7 +20,7 @@ export default function Hero() {
 
             {/* Content */}
             <div className="md:py-60 py-72 mb-0 relative z-10">
-                <h1 className="md:text-3xl text-2xl font-bold uppercase md:mb-7">
+                <h1 className="md:text-3xl text-sm font-bold uppercase md:mb-7">
                     Welcome to
                 </h1>
                 <h2 className="md:text-6xl text-4xl font-bold uppercase md:mb-6 md:py-0 py-6">
