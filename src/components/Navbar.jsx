@@ -32,7 +32,7 @@ export default function () {
 
     return (
         <div>
-            <nav className={`bg-${scrolled ? 'white' : "transparent"} text-${scrolled ? 'black' : 'white'} fixed inset-x-0 top-0 z-10 w-full mb-5 `}>
+            <nav className={`bg-${scrolled ? 'white' : "transparent"} text-${scrolled || open ? 'black' : 'white'}  fixed inset-x-0 top-0 z-50 w-full mb-5 `}>
                 <div className="flex items-center text-sm justify-between md:pr-20">
                     <div className="z-50 p-3 md:w-auto w-full flex justify-between items-center">
                         <Link to="/">
@@ -44,7 +44,7 @@ export default function () {
                                 <LuHeartHandshake className='text-[16px]' />
                                 <span className='text-sm hover:underline'>Partner with us</span>
                             </Link>
-                            <button className={`bg-${scrolled ? 'black' : 'transparent'} text-${scrolled ? 'black' : 'white'} flex items-center text-sm space-x-2`} onClick={() => {
+                            <button className={`bg-${scrolled ? 'black' : 'transparent'} md:text-${scrolled ? 'black' : 'white'} flex items-center text-sm space-x-2`} onClick={() => {
                                 setOpen(!open); console.log('open');
                             }}>
                                 {open ? (
