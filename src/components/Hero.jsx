@@ -1,4 +1,4 @@
-import HeroImage from '../assets/DYC3.jpeg';
+import HeroImage from '../assets/DYC_Day4-118.webp';
 import { motion } from 'framer-motion'
 
 export default function Hero() {
