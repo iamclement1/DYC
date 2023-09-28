@@ -23,7 +23,7 @@ export default function Hero() {
                 <h1 className="md:text-3xl text-sm font-bold uppercase md:mb-7">
                     Welcome to
                 </h1>
-                <h2 className="md:text-6xl text-4xl font-bold uppercase md:mb-6 md:py-0 py-6">
+                <h2 className="md:text-6xl text-4xl font-bold uppercase md:mb-6 md:py-0 ">
                     diocesan youth department
                 </h2>
                 <span className="md:py-6 py-3 text-center text-white md:text-2xl text-sm font-semibold uppercase block">

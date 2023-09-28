@@ -33,7 +33,7 @@ const BackToTopButton = () => {
       <button
          onClick={scrollToTop}
          className={`${isVisible ? 'block' : 'hidden'
-            } fixed bottom-4 right-4 p-2 bg-purple-800 text-white rounded-full cursor-pointer transition-opacity duration-300 hover:bg-blue-600 hover:opacity-90`}
+            } fixed bottom-4 right-4 p-2 bg-purple-800 text-white rounded-full cursor-pointer transition-opacity duration-300 `}
       >
          <FaArrowUp />
       </button>

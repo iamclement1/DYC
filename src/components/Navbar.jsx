@@ -2,6 +2,7 @@ import Logo from '../assets/Diocesan-Logo.svg'
 import { useEffect, useState } from "react";
 import { FaBars } from 'react-icons/fa'
 import { LuHeartHandshake } from 'react-icons/lu'
+import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 
 
@@ -43,7 +44,22 @@ export default function () {
                                 <LuHeartHandshake className='text-[16px]' />
                                 <span className='text-sm hover:underline'>Partner with us</span>
                             </Link>
-                            <FaBars name={`${open ? "close" : "menu"}`} onClick={() => setOpen(!open)} />
+                            <button className={`bg-${scrolled ? 'black' : 'transparent'} text-${scrolled ? 'black' : 'white'} flex items-center text-sm space-x-2`} onClick={() => {
+                                setOpen(!open); console.log('open');
+                            }}>
+                                {open ? (
+                                    <>
+                                        <AiOutlineClose className="text-sm" />
+                                        <span className="text-sm">Close</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <FaBars className="text-sm" />
+                                        <span className="text-sm">Menu</span>
+                                    </>
+                                )}
+                                {/* <span>Menu</span> */}
+                            </button>
                         </div>
                     </div>
                     <ul className="md:flex  font-semibold hidden uppercase items-center md:mr-6">
