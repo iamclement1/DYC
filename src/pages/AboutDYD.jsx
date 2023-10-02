@@ -1,4 +1,4 @@
-import Bishop from '../assets/Bishop.png'
+import Bishop from '../assets/DYC_Day4-90.webp'
 export default function AboutDYD() {
     return (
         <>

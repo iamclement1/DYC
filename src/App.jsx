@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
 import Sponsor from './pages/Sponsor'
+import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 
 function App() {
 
