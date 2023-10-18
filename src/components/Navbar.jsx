@@ -2,14 +2,15 @@ import Logo from '../assets/Diocesan-Logo.svg'
 import { useEffect, useState } from "react";
 import { FaBars } from 'react-icons/fa'
 import { LuHeartHandshake } from 'react-icons/lu'
-import { AiOutlineClose } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { AiOutlineClose, AiOutlineHome } from 'react-icons/ai'
+import { Link, useLocation } from 'react-router-dom';
 
 
 export default function () {
     const [open, setOpen] = useState(false)
-
     const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,6 +31,10 @@ export default function () {
         };
     }, []);
 
+
+    //constshow to show home link when location ==== partner
+    const isPathname = location.pathname.toLowerCase === 'partner'
+
     return (
         <div>
             <nav className={`bg-${scrolled ? 'white' : "transparent"} text-${scrolled || open ? 'black' : 'white'} ${scrolled && 'shadow-lg'}  fixed inset-x-0 top-0 z-50 w-full mb-5 `}>
@@ -40,11 +45,15 @@ export default function () {
                         md:w-full md:h-16 w-10"/>
                         </Link>
                         <div className="flex space-x-4 text-2xl md:hidden items-center" >
-                            <Link to='/partner' className='flex space-x-2 items-center justify-center'>
-                                <LuHeartHandshake className='text-[16px]' />
-                                <span className='text-sm hover:underline'>Partner with us</span>
-                            </Link>
-                            <button className={`bg-${scrolled ? 'black' : 'transparent'} md:text-${scrolled ? 'black' : 'white'} flex items-center text-sm space-x-2`} onClick={() => {
+                            {
+                                location.pathname !== '/partner' && (
+                                    <Link to='/partner' className='flex space-x-2 items-center justify-center'>
+                                        <LuHeartHandshake className='text-[16px]' />
+                                        <span className='text-sm hover:underline'>Partner with us</span>
+                                    </Link>
+                                )
+                            }
+                            {/* <button className={`bg-${scrolled ? 'black' : 'transparent'} md:text-${scrolled ? 'black' : 'white'} flex items-center text-sm space-x-2`} onClick={() => {
                                 setOpen(!open); 
                             }}>
                                 {open ? (
@@ -58,8 +67,13 @@ export default function () {
                                         <span className="text-sm">Menu</span>
                                     </>
                                 )}
-                                {/* <span>Menu</span> */}
-                            </button>
+                            </button> */}
+                            {location.pathname === '/partner' && (
+                                <Link to='/' className='flex space-x-2 items-center justify-center'>
+                                    <AiOutlineHome className='text-[16px]' />
+                                    <span className='text-sm hover:underline'>Home</span>
+                                </Link>
+                            )}
                         </div>
                     </div>
                     <ul className="md:flex  font-semibold hidden uppercase items-center md:mr-6">
