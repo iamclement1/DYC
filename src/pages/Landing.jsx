@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../components/Hero'
 import { About } from './About'
 import AboutDYD from './AboutDYD'
 import CampActivity from './CampActivities'
 import Timer from './Timer'
-import Loader from '../components/Loader/Loader'
 // import Speakers from './Speakers'
 import BackToTopButton from '../components/BackToTop'
-import CampActivitesCarousel from './CampActivitesCarousel'
 
 
 export default function Landing() {
@@ -22,8 +20,7 @@ export default function Landing() {
         <div>
             <Hero />
             <About />
-            {/* <CampActivity /> */}
-            <CampActivitesCarousel />
+            <CampActivity />
             <Timer eventDate={eventDate} />
             {/* <Speakers /> */}
             <AboutDYD />
