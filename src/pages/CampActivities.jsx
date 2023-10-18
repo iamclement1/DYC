@@ -7,6 +7,7 @@ import Prayer from '../assets/pray-1.png';
 import Worship from '../assets/hands-1.png';
 import Fun from '../assets/laugh-1.png';
 import { Fade } from 'react-awesome-reveal';
+import { CampActivities } from '../util/activities';
 
 
 export default function CampActivity() {
@@ -17,59 +18,20 @@ export default function CampActivity() {
                 Camp Activities
             </h3>
             <Fade direction="up" triggerOnce cascade>
-                <div className="mx-auto md:w-3/4 md:flex px-6 py-4 md:px-0 md:py-0 justify-between overflow-hidden ">
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 ">
-                        <img src={Fellowship} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-2/5 mx-auto py-2 font-semibold text-gray-600">
-                            daily Fellowship
-                        </p>
-                    </div>
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
-                        <img src={Studying} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-3/6 mx-auto py-2 font-semibold text-gray-600">
-                            daily bible classes
-                        </p>
-                    </div>
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 px-auto">
-                        <img src={Sport} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-2/5 mx-auto py-2 font-semibold text-gray-600">
-                            sports
-                        </p>
-                    </div>
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
-                        <img src={Communion} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-4/6 mx-auto py-2 font-semibold text-gray-600">
-                            an inspiring communion service
-                        </p>
-                    </div>
+                <div className="grid md:grid-cols-4 grid-cols-2 gap-6 md:px-12 px-4">
+                    {
+                        CampActivities.map((activities) => (
+                            <div key={activities.id} className='flex flex-col gap-2 items-center justify-center bg-white rounded-lg shadow-md p-4'>
+                                <img src={activities.img} alt={activities.title} className='w-12 h-12' />
+                                <span className='text-center text-xs'>
+                                    {activities.title}
+                                </span>
+                            </div>
+                        ))
+                    }
+
                 </div>
 
-                <div className="mx-auto md:w-3/4 md:flex px-6 py-4 md:px-0 md:py-0 justify-between overflow-hidden md:mt-5 mt-2 ">
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 ">
-                        <img src={Activities} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-2/5 mx-auto py-2 font-semibold text-gray-600">
-                            platoon activities
-                        </p>
-                    </div>
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
-                        <img src={Prayer} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-3/6 mx-auto py-2 font-semibold text-gray-600">
-                            corporate devotions
-                        </p>
-                    </div>
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4 px-auto">
-                        <img src={Worship} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-3/5 mx-auto py-2 font-semibold text-gray-600">
-                            worship & prayers
-                        </p>
-                    </div>
-                    <div className="md:mb-0 mb-4 text-center items-center shadow-md p-4">
-                        <img src={Communion} alt="Fellowship-logo" className="w-2/6 mx-auto mt-2" />
-                        <p className="uppercase text-sm w-4/6 mx-auto py-2 font-semibold text-gray-600">
-                            an inspiring communion service
-                        </p>
-                    </div>
-                </div>
 
             </Fade>
 
