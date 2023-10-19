@@ -1,4 +1,4 @@
-import HeroImage from '../assets/DYC_Day4-118.webp';
+import HeroImage from '../assets/home-hero-image.jpg';
 import { motion } from 'framer-motion'
 
 export default function Hero() {
@@ -14,10 +14,10 @@ export default function Hero() {
                 }}
             >
                 {/* Black Overlay */}
-                {/* <div
-                    className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-purple-900 opacity-70" /> */}
                 <div
-                    className="absolute inset-0 bg-purple-800 opacity-80" />
+                    className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-purple-900 opacity-70" />
+                {/* <div
+                    className="absolute inset-0 bg-purple-800 opacity-80" /> */}
             </div>
 
             {/* Content */}
