@@ -18,7 +18,7 @@ const PartnershipHero = () => {
                   className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-purple-900 opacity-50" />
             </div>
             {/* Content */}
-            <div className="md:py-60 py-72 mb-0 relative z-10">
+            <div className="md:py-60 py-64 mb-0 relative z-10">
                <h1 className="md:text-3xl text-2xl font-bold uppercase md:mb-7">
                   Partner With Us
                </h1>
