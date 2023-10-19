@@ -1,11 +1,3 @@
-import Fellowship from '../assets/ceremony-1.png';
-import Studying from '../assets/studying-1.png';
-import Sport from '../assets/football-1.png';
-import Communion from '../assets/holy-chalice-1.png';
-import Activities from '../assets/activities-1.png';
-import Prayer from '../assets/pray-1.png';
-import Worship from '../assets/hands-1.png';
-import Fun from '../assets/laugh-1.png';
 import { Fade } from 'react-awesome-reveal';
 import { CampActivities } from '../util/activities';
 
@@ -42,7 +34,7 @@ export default function CampActivity() {
                         Theme:
                     </h3>
                     <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
-                        A Peculiar Youth
+                        Abundance
                     </h2>
                 </div>
                 <div>
@@ -50,7 +42,7 @@ export default function CampActivity() {
                         Date:
                     </h3>
                     <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
-                        17 - 20 December, 2022
+                        17 - 20 December, 2023
                     </h2>
                 </div>
                 <div>
@@ -58,7 +50,7 @@ export default function CampActivity() {
                         Venue:
                     </h3>
                     <h2 className=" mx-auto md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">
-                        United Missionary Comprehensive College, Molete, Ibadan
+                        ...TO BE UPDATED
                     </h2>
                 </div>
             </main>
