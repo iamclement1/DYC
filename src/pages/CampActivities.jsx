@@ -50,7 +50,7 @@ export default function CampActivity() {
                         Venue:
                     </h3>
                     <h2 className=" mx-auto md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">
-                        ...TO BE UPDATED
+                        Comfort Akinfenwa Event Center & Chalet, Molete.
                     </h2>
                 </div>
             </main>

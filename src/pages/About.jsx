@@ -13,7 +13,7 @@ export const About = () => {
                         Diocesan Youth Convention (DYC) is an annual camp meeting organized by the Diocesan Youth Department of the Ibadan Anglican Diocese. It has provided unique spiritual learning opportunities since 2000 for Christian youths.
                     </p>
                     <p className="md:text-[20px] text-[12px] md:leading-loose leading-6 opacity-60 py-4 mx-6">
-                        A 4-day camp meeting for youth will be offered this year by DYC, designed specifically to help them develop the faith they need to face today's challenges. From 17th - 20th December, the convention will be held at the United Missionary Comprehensive College (UMCC), Molete, Ibadan, Nigeria.
+                        A 4-day camp meeting for youth will be offered this year by DYC, designed specifically to help them develop the faith they need to face today's challenges. <b>From 17th - 20th December</b>, the convention will be held at <b>Comfort Akinfenwa Event Center & Chalet, Molete, Ibadan, Nigeria</b>.
                     </p>
                     <p className="md:text-[20px] text-[12px] md:leading-loose leading-6 opacity-60 mx-6">
                         The DYC provides campers with the opportunity to explore their faith, develop their relationship with God, and form friendships with other young people.
