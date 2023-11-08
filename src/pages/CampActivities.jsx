@@ -34,7 +34,7 @@ export default function CampActivity() {
                         Theme:
                     </h3>
                     <h2 className="text-[#5C407F] text-center md:text-3xl text-xl font-bold">
-                        Abundance
+                        Overflowing Abundance
                     </h2>
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export default function CampActivity() {
                     <h3 className="mt-6 mb-2 uppercase text-gray-500 text-center md:text-xl text-sm font-semibold">
                         Venue:
                     </h3>
-                    <h2 className=" mx-auto md:w-3/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold">
+                    <h2 className=" mx-auto md:w-2/6 text-[#5C407F] text-center md:text-3xl text-xl font-bold px-7 md:px-0 leading-loose">
                         Comfort Akinfenwa Event Center & Chalet, Molete.
                     </h2>
                 </div>
